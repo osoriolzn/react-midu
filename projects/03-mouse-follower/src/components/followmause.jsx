@@ -17,7 +17,7 @@ export const FollowMause = () => {
     return () => {
       window.removeEventListener("pointermove", handleMove);
     };
-  }), [enable];
+  }, [enable])
 
   useEffect(() => {
     document.body.classList.toggle("no-cursor", enable);
@@ -25,7 +25,7 @@ export const FollowMause = () => {
     return () => {
       document.body.classList.remove("no-cursor");
     };
-  }), [enable];
+  }, [enable])
 
   return (
     <>
